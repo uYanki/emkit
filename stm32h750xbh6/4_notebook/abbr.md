@@ -1,0 +1,46 @@
+## 缩写
+
+- 嵌入式系统: Embedded System
+- 微控制器: Microcontroller Unit, MCU
+- 微处理器: Micro Processing Unit, MPU
+- 嵌入式操作系统: Embedded Operation System, EOS
+- 实时操作系统: Real Time Operation System, RTOS
+- 看门狗定时器: Watch Dog Timer, WDT
+- 数字信号处理器: Digital Signal Processor, DSP
+- 片上系统: System On Chip, SoC
+- 在线仿真器: In-Circuit Emulator, ICE
+- 在线调试器: In-Circuit Debugger, ICD
+- 片上调试器: On-Chip Debugger, OCD
+- 公共交通无线接触智能卡: Contactless Smartcard, CSC
+- 嵌入式微处理器: Embedded Micro Processing Unit, EMPU
+- 嵌入式微控制器: Embedder Microcontroller U
+- 嵌入式数字信号处理: Embedded Digital Signal Processor, EDSP
+- 嵌入式片上系统: Embedded System On Chip, ESoC
+- 嵌入式可编程片上系统: Embedded Programmable System On Chip, EPSoC
+- 单片微型计算机(EMCU 的别名): Single Chip Microcomputer, SCM
+- 板级支持包: Board Surport Package, BSP
+- 应用编程接口: Application Programming Interface, API
+- IP: Intellectual Property
+- 精简指令集架构: Reduced Instruction Set Computer, RISC
+- 复杂指令集架构: Complex Instruction Set Computer, CISC
+- CPI(Cycles Per Instruction): 每条指令周期数
+- 平均故障时间: Mean Time Between Failures, MTBF
+- ARM(Acvanced RISC Machines) --> ARM7 采用三级流水线即取指、译码以及执行, ARM9 采用五级流水线, ARM10 采取六级流水线
+- 程序状态寄存器:
+  - CPSR(当前程序状态寄存器)
+  - SPSR(备份的程序状态寄存器, 物理状态寄存器)
+- PLD(Programmable Logic Device, 可编程逻辑器件)
+  - CPLD(Complex Programmable Logic Device, 复杂可编程逻辑器件)
+  - FPGA(Field Programmable Gate Array, 现场可编程门阵列)
+- 片上多核处理器: Chi Muti-Processor, CMP
+- SMP(Symmetric Mutiprocessing, 对称多处理器)
+- AMP(Asymmetric Mutiprocessing, 非对称多处理器)
+- I2C(Inter-Integrated Cicuit, 集成电路总线) 通过串行数据线(Serial Data Line, SDL)及串行时钟线(Serial Clock Line, SCL)两根导线连接嵌入式处理器和外设 IC 器件. (传输速度: [100 kbits/s, 400 kbits/s])
+- I2S(Inter-IC Sound, 集成电路内置音频总线) 是一种串行总线接口标准
+- CAN(Controller Area Network) 是一种实时数据传输应用的串行通信协议
+- GPRS(General Packet Radio System, 通用分组无线业务)
+- CDMA(Code Division Multiple Access, 码分多址)
+- 内存管理单元: Memory Management Unit, MMU
+- ISA(Instruction System Architecture, 指令集)
+- ASIC(Application Specific Integrated Circuit, 专用集成电路)
+- LED(Light Emmiting Diode)

@@ -1,0 +1,8 @@
+TKM32F499GT8.FLM  ：这个下载算法需要bootloader，程序地址从0x0x70020000起执行，启动时搬运程序到内部SDRAM执行速度快一点。程序运行速度一样，仅启动时间快一点。
+TKM32F499GT8_no_Bootloader.FLM ：这个下载算法无需bootloader，程序地址从0x0x70008000起执行，启动时搬运程序到内部SDRAM执行速度慢一点。程序运行速度一样，仅启动时间慢一点。
+
+二者各有优点，无需Bootloader的就是简单一点，需要Bootloader的大程序（超过1MB）启动速度体现快一点。一般人感觉不出来，打开电源松开手瞬间就搬运完了，视具体需求自行选择。特别说明，目前本公司大部分程序都是基于有Bootloader编写的，切换为无需Bootloader时请参考（TK499存储空间分配说明）配置一下。
+
+重要说明，当你不用官方的Bootloader时，记得打开一下AI  Responder ，加入下面一句在main函数开头:  
+    AI_Responder_enable();
+ 这个Responder 带有穿透及旁路型cache，可以加速执行程序 ，这个Responder 平时在官方的Bootloader已经启动的，所以大家基本没看到过，容易忽略。
