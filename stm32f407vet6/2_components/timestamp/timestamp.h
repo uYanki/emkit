@@ -1,0 +1,465 @@
+#ifndef __TIMESTAMP_H__
+#define __TIMESTAMP_H__
+
+/**
+ * @brief 时间戳，是从1970年1月1日（UTC/GMT的午夜）开始所经过的秒数（不考虑闰秒）
+ * @note  GMT是格林尼治平均时，UTC是世界标准时/协调世界时/原子时。北京时间 = GMT+8 = UTC+8。
+ */
+
+#include <stdint.h>
+#include <stdbool.h>
+#include "time.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+//---------------------------------------------------------------------------
+// Definitions
+//---------------------------------------------------------------------------
+
+/**
+ * @brief 时区
+ */
+typedef enum {
+    TIMEZONE_AFRICA_ABIDJAN,                  // Africa/Abidjan
+    TIMEZONE_AFRICA_ACCRA,                    // Africa/Accra
+    TIMEZONE_AFRICA_ADDIS_ABABA,              // Africa/Addis_Ababa
+    TIMEZONE_AFRICA_ALGIERS,                  // Africa/Algiers
+    TIMEZONE_AFRICA_ASMERA,                   // Africa/Asmera
+    TIMEZONE_AFRICA_BAMAKO,                   // Africa/Bamako
+    TIMEZONE_AFRICA_BANGUI,                   // Africa/Bangui
+    TIMEZONE_AFRICA_BANJUL,                   // Africa/Banjul
+    TIMEZONE_AFRICA_BISSAU,                   // Africa/Bissau
+    TIMEZONE_AFRICA_BLANTYRE,                 // Africa/Blantyre
+    TIMEZONE_AFRICA_BRAZZAVILLE,              // Africa/Brazzaville
+    TIMEZONE_AFRICA_BUJUMBURA,                // Africa/Bujumbura
+    TIMEZONE_AFRICA_CAIRO,                    // Africa/Cairo
+    TIMEZONE_AFRICA_CASABLANCA,               // Africa/Casablanca
+    TIMEZONE_AFRICA_CEUTA,                    // Africa/Ceuta
+    TIMEZONE_AFRICA_CONAKRY,                  // Africa/Conakry
+    TIMEZONE_AFRICA_DAKAR,                    // Africa/Dakar
+    TIMEZONE_AFRICA_DAR_ES_SALAAM,            // Africa/Dar_es_Salaam
+    TIMEZONE_AFRICA_DJIBOUTI,                 // Africa/Djibouti
+    TIMEZONE_AFRICA_DOUALA,                   // Africa/Douala
+    TIMEZONE_AFRICA_EL_AAIUN,                 // Africa/El_Aaiun
+    TIMEZONE_AFRICA_FREETOWN,                 // Africa/Freetown
+    TIMEZONE_AFRICA_GABORONE,                 // Africa/Gaborone
+    TIMEZONE_AFRICA_HARARE,                   // Africa/Harare
+    TIMEZONE_AFRICA_JOHANNESBURG,             // Africa/Johannesburg
+    TIMEZONE_AFRICA_JUBA,                     // Africa/Juba
+    TIMEZONE_AFRICA_KAMPALA,                  // Africa/Kampala
+    TIMEZONE_AFRICA_KHARTOUM,                 // Africa/Khartoum
+    TIMEZONE_AFRICA_KIGALI,                   // Africa/Kigali
+    TIMEZONE_AFRICA_KINSHASA,                 // Africa/Kinshasa
+    TIMEZONE_AFRICA_LAGOS,                    // Africa/Lagos
+    TIMEZONE_AFRICA_LIBREVILLE,               // Africa/Libreville
+    TIMEZONE_AFRICA_LOME,                     // Africa/Lome
+    TIMEZONE_AFRICA_LUANDA,                   // Africa/Luanda
+    TIMEZONE_AFRICA_LUBUMBASHI,               // Africa/Lubumbashi
+    TIMEZONE_AFRICA_LUSAKA,                   // Africa/Lusaka
+    TIMEZONE_AFRICA_MALABO,                   // Africa/Malabo
+    TIMEZONE_AFRICA_MAPUTO,                   // Africa/Maputo
+    TIMEZONE_AFRICA_MASERU,                   // Africa/Maseru
+    TIMEZONE_AFRICA_MBABANE,                  // Africa/Mbabane
+    TIMEZONE_AFRICA_MOGADISHU,                // Africa/Mogadishu
+    TIMEZONE_AFRICA_MONROVIA,                 // Africa/Monrovia
+    TIMEZONE_AFRICA_NAIROBI,                  // Africa/Nairobi
+    TIMEZONE_AFRICA_NDJAMENA,                 // Africa/Ndjamena
+    TIMEZONE_AFRICA_NIAMEY,                   // Africa/Niamey
+    TIMEZONE_AFRICA_NOUAKCHOTT,               // Africa/Nouakchott
+    TIMEZONE_AFRICA_OUAGADOUGOU,              // Africa/Ouagadougou
+    TIMEZONE_AFRICA_PORTO_NOVO,               // Africa/Porto-Novo
+    TIMEZONE_AFRICA_SAO_TOME,                 // Africa/Sao_Tome
+    TIMEZONE_AFRICA_TRIPOLI,                  // Africa/Tripoli
+    TIMEZONE_AFRICA_TUNIS,                    // Africa/Tunis
+    TIMEZONE_AFRICA_WINDHOEK,                 // Africa/Windhoek
+    TIMEZONE_AMERICA_ADAK,                    // America/Adak
+    TIMEZONE_AMERICA_ANCHORAGE,               // America/Anchorage
+    TIMEZONE_AMERICA_ANGUILLA,                // America/Anguilla
+    TIMEZONE_AMERICA_ANTIGUA,                 // America/Antigua
+    TIMEZONE_AMERICA_ARAGUAINA,               // America/Araguaina
+    TIMEZONE_AMERICA_ARGENTINA_LA_RIOJA,      // America/Argentina/La_Rioja
+    TIMEZONE_AMERICA_ARGENTINA_RIO_GALLEGOS,  // America/Argentina/Rio_Gallegos
+    TIMEZONE_AMERICA_ARGENTINA_SALTA,         // America/Argentina/Salta
+    TIMEZONE_AMERICA_ARGENTINA_SAN_JUAN,      // America/Argentina/San_Juan
+    TIMEZONE_AMERICA_ARGENTINA_SAN_LUIS,      // America/Argentina/San_Luis
+    TIMEZONE_AMERICA_ARGENTINA_TUCUMAN,       // America/Argentina/Tucuman
+    TIMEZONE_AMERICA_ARGENTINA_USHUAIA,       // America/Argentina/Ushuaia
+    TIMEZONE_AMERICA_ARUBA,                   // America/Aruba
+    TIMEZONE_AMERICA_ASUNCION,                // America/Asuncion
+    TIMEZONE_AMERICA_BAHIA,                   // America/Bahia
+    TIMEZONE_AMERICA_BAHIA_BANDERAS,          // America/Bahia_Banderas
+    TIMEZONE_AMERICA_BARBADOS,                // America/Barbados
+    TIMEZONE_AMERICA_BELEM,                   // America/Belem
+    TIMEZONE_AMERICA_BELIZE,                  // America/Belize
+    TIMEZONE_AMERICA_BLANC_SABLON,            // America/Blanc-Sablon
+    TIMEZONE_AMERICA_BOA_VISTA,               // America/Boa_Vista
+    TIMEZONE_AMERICA_BOGOTA,                  // America/Bogota
+    TIMEZONE_AMERICA_BOISE,                   // America/Boise
+    TIMEZONE_AMERICA_BUENOS_AIRES,            // America/Buenos_Aires
+    TIMEZONE_AMERICA_CAMBRIDGE_BAY,           // America/Cambridge_Bay
+    TIMEZONE_AMERICA_CAMPO_GRANDE,            // America/Campo_Grande
+    TIMEZONE_AMERICA_CANCUN,                  // America/Cancun
+    TIMEZONE_AMERICA_CARACAS,                 // America/Caracas
+    TIMEZONE_AMERICA_CATAMARCA,               // America/Catamarca
+    TIMEZONE_AMERICA_CAYENNE,                 // America/Cayenne
+    TIMEZONE_AMERICA_CAYMAN,                  // America/Cayman
+    TIMEZONE_AMERICA_CHICAGO,                 // America/Chicago
+    TIMEZONE_AMERICA_CHIHUAHUA,               // America/Chihuahua
+    // TIMEZONE_AMERICA_CIUDAD_JUAREZ,        // America/Ciudad_Juarez
+    TIMEZONE_AMERICA_CORAL_HARBOUR,           // America/Coral_Harbour
+    TIMEZONE_AMERICA_CORDOBA,                 // America/Cordoba
+    TIMEZONE_AMERICA_COSTA_RICA,              // America/Costa_Rica
+    TIMEZONE_AMERICA_CRESTON,                 // America/Creston
+    TIMEZONE_AMERICA_CUIABA,                  // America/Cuiaba
+    TIMEZONE_AMERICA_CURACAO,                 // America/Curacao
+    TIMEZONE_AMERICA_DANMARKSHAVN,            // America/Danmarkshavn
+    TIMEZONE_AMERICA_DAWSON,                  // America/Dawson
+    TIMEZONE_AMERICA_DAWSON_CREEK,            // America/Dawson_Creek
+    TIMEZONE_AMERICA_DENVER,                  // America/Denver
+    TIMEZONE_AMERICA_DETROIT,                 // America/Detroit
+    TIMEZONE_AMERICA_DOMINICA,                // America/Dominica
+    TIMEZONE_AMERICA_EDMONTON,                // America/Edmonton
+    TIMEZONE_AMERICA_EIRUNEPE,                // America/Eirunepe
+    TIMEZONE_AMERICA_EL_SALVADOR,             // America/El_Salvador
+    TIMEZONE_AMERICA_FORT_NELSON,             // America/Fort_Nelson
+    TIMEZONE_AMERICA_FORTALEZA,               // America/Fortaleza
+    TIMEZONE_AMERICA_GLACE_BAY,               // America/Glace_Bay
+    TIMEZONE_AMERICA_GODTHAB,                 // America/Godthab
+    TIMEZONE_AMERICA_GOOSE_BAY,               // America/Goose_Bay
+    TIMEZONE_AMERICA_GRAND_TURK,              // America/Grand_Turk
+    TIMEZONE_AMERICA_GRENADA,                 // America/Grenada
+    TIMEZONE_AMERICA_GUADELOUPE,              // America/Guadeloupe
+    TIMEZONE_AMERICA_GUATEMALA,               // America/Guatemala
+    TIMEZONE_AMERICA_GUAYAQUIL,               // America/Guayaquil
+    TIMEZONE_AMERICA_GUYANA,                  // America/Guyana
+    TIMEZONE_AMERICA_HALIFAX,                 // America/Halifax
+    TIMEZONE_AMERICA_HAVANA,                  // America/Havana
+    TIMEZONE_AMERICA_HERMOSILLO,              // America/Hermosillo
+    TIMEZONE_AMERICA_INDIANA_KNOX,            // America/Indiana/Knox
+    TIMEZONE_AMERICA_INDIANA_MARENGO,         // America/Indiana/Marengo
+    TIMEZONE_AMERICA_INDIANA_PETERSBURG,      // America/Indiana/Petersburg
+    TIMEZONE_AMERICA_INDIANA_TELL_CITY,       // America/Indiana/Tell_City
+    TIMEZONE_AMERICA_INDIANA_VEVAY,           // America/Indiana/Vevay
+    TIMEZONE_AMERICA_INDIANA_VINCENNES,       // America/Indiana/Vincennes
+    TIMEZONE_AMERICA_INDIANA_WINAMAC,         // America/Indiana/Winamac
+    TIMEZONE_AMERICA_INDIANAPOLIS,            // America/Indianapolis
+    TIMEZONE_AMERICA_INUVIK,                  // America/Inuvik
+    TIMEZONE_AMERICA_IQALUIT,                 // America/Iqaluit
+    TIMEZONE_AMERICA_JAMAICA,                 // America/Jamaica
+    TIMEZONE_AMERICA_JUJUY,                   // America/Jujuy
+    TIMEZONE_AMERICA_JUNEAU,                  // America/Juneau
+    TIMEZONE_AMERICA_KENTUCKY_MONTICELLO,     // America/Kentucky/Monticello
+    TIMEZONE_AMERICA_KRALENDIJK,              // America/Kralendijk
+    TIMEZONE_AMERICA_LA_PAZ,                  // America/La_Paz
+    TIMEZONE_AMERICA_LIMA,                    // America/Lima
+    TIMEZONE_AMERICA_LOS_ANGELES,             // America/Los_Angeles
+    TIMEZONE_AMERICA_LOUISVILLE,              // America/Louisville
+    TIMEZONE_AMERICA_LOWER_PRINCES,           // America/Lower_Princes
+    TIMEZONE_AMERICA_MACEIO,                  // America/Maceio
+    TIMEZONE_AMERICA_MANAGUA,                 // America/Managua
+    TIMEZONE_AMERICA_MANAUS,                  // America/Manaus
+    TIMEZONE_AMERICA_MARIGOT,                 // America/Marigot
+    TIMEZONE_AMERICA_MARTINIQUE,              // America/Martinique
+    TIMEZONE_AMERICA_MATAMOROS,               // America/Matamoros
+    TIMEZONE_AMERICA_MAZATLAN,                // America/Mazatlan
+    TIMEZONE_AMERICA_MENDOZA,                 // America/Mendoza
+    TIMEZONE_AMERICA_MENOMINEE,               // America/Menominee
+    TIMEZONE_AMERICA_MERIDA,                  // America/Merida
+    TIMEZONE_AMERICA_METLAKATLA,              // America/Metlakatla
+    TIMEZONE_AMERICA_MEXICO_CITY,             // America/Mexico_City
+    TIMEZONE_AMERICA_MIQUELON,                // America/Miquelon
+    TIMEZONE_AMERICA_MONCTON,                 // America/Moncton
+    TIMEZONE_AMERICA_MONTERREY,               // America/Monterrey
+    TIMEZONE_AMERICA_MONTEVIDEO,              // America/Montevideo
+    TIMEZONE_AMERICA_MONTSERRAT,              // America/Montserrat
+    TIMEZONE_AMERICA_NASSAU,                  // America/Nassau
+    TIMEZONE_AMERICA_NEW_YORK,                // America/New_York
+    TIMEZONE_AMERICA_NOME,                    // America/Nome
+    TIMEZONE_AMERICA_NORONHA,                 // America/Noronha
+    TIMEZONE_AMERICA_NORTH_DAKOTA_BEULAH,     // America/North_Dakota/Beulah
+    TIMEZONE_AMERICA_NORTH_DAKOTA_CENTER,     // America/North_Dakota/Center
+    TIMEZONE_AMERICA_NORTH_DAKOTA_NEW_SALEM,  // America/North_Dakota/New_Salem
+    TIMEZONE_AMERICA_OJINAGA,                 // America/Ojinaga
+    TIMEZONE_AMERICA_PANAMA,                  // America/Panama
+    TIMEZONE_AMERICA_PARAMARIBO,              // America/Paramaribo
+    TIMEZONE_AMERICA_PHOENIX,                 // America/Phoenix
+    TIMEZONE_AMERICA_PORT_AU_PRINCE,          // America/Port-au-Prince
+    TIMEZONE_AMERICA_PORT_OF_SPAIN,           // America/Port_of_Spain
+    TIMEZONE_AMERICA_PORTO_VELHO,             // America/Porto_Velho
+    TIMEZONE_AMERICA_PUERTO_RICO,             // America/Puerto_Rico
+    TIMEZONE_AMERICA_PUNTA_ARENAS,            // America/Punta_Arenas
+    TIMEZONE_AMERICA_RANKIN_INLET,            // America/Rankin_Inlet
+    TIMEZONE_AMERICA_RECIFE,                  // America/Recife
+    TIMEZONE_AMERICA_REGINA,                  // America/Regina
+    TIMEZONE_AMERICA_RESOLUTE,                // America/Resolute
+    TIMEZONE_AMERICA_RIO_BRANCO,              // America/Rio_Branco
+    TIMEZONE_AMERICA_SANTAREM,                // America/Santarem
+    TIMEZONE_AMERICA_SANTIAGO,                // America/Santiago
+    TIMEZONE_AMERICA_SANTO_DOMINGO,           // America/Santo_Domingo
+    TIMEZONE_AMERICA_SAO_PAULO,               // America/Sao_Paulo
+    TIMEZONE_AMERICA_SCORESBYSUND,            // America/Scoresbysund
+    TIMEZONE_AMERICA_SITKA,                   // America/Sitka
+    TIMEZONE_AMERICA_ST_BARTHELEMY,           // America/St_Barthelemy
+    TIMEZONE_AMERICA_ST_JOHNS,                // America/St_Johns
+    TIMEZONE_AMERICA_ST_KITTS,                // America/St_Kitts
+    TIMEZONE_AMERICA_ST_LUCIA,                // America/St_Lucia
+    TIMEZONE_AMERICA_ST_THOMAS,               // America/St_Thomas
+    TIMEZONE_AMERICA_ST_VINCENT,              // America/St_Vincent
+    TIMEZONE_AMERICA_SWIFT_CURRENT,           // America/Swift_Current
+    TIMEZONE_AMERICA_TEGUCIGALPA,             // America/Tegucigalpa
+    TIMEZONE_AMERICA_THULE,                   // America/Thule
+    TIMEZONE_AMERICA_TIJUANA,                 // America/Tijuana
+    TIMEZONE_AMERICA_TORONTO,                 // America/Toronto
+    TIMEZONE_AMERICA_TORTOLA,                 // America/Tortola
+    TIMEZONE_AMERICA_VANCOUVER,               // America/Vancouver
+    TIMEZONE_AMERICA_WHITEHORSE,              // America/Whitehorse
+    TIMEZONE_AMERICA_WINNIPEG,                // America/Winnipeg
+    TIMEZONE_AMERICA_YAKUTAT,                 // America/Yakutat
+    TIMEZONE_ANTARCTICA_CASEY,                // Antarctica/Casey
+    TIMEZONE_ANTARCTICA_DAVIS,                // Antarctica/Davis
+    TIMEZONE_ANTARCTICA_DUMONTDURVILLE,       // Antarctica/DumontDUrville
+    TIMEZONE_ANTARCTICA_MACQUARIE,            // Antarctica/Macquarie
+    TIMEZONE_ANTARCTICA_MAWSON,               // Antarctica/Mawson
+    TIMEZONE_ANTARCTICA_MCMURDO,              // Antarctica/McMurdo
+    TIMEZONE_ANTARCTICA_PALMER,               // Antarctica/Palmer
+    TIMEZONE_ANTARCTICA_ROTHERA,              // Antarctica/Rothera
+    TIMEZONE_ANTARCTICA_SYOWA,                // Antarctica/Syowa
+    TIMEZONE_ANTARCTICA_TROLL,                // Antarctica/Troll
+    TIMEZONE_ANTARCTICA_VOSTOK,               // Antarctica/Vostok
+    TIMEZONE_ARCTIC_LONGYEARBYEN,             // Arctic/Longyearbyen
+    TIMEZONE_ASIA_ADEN,                       // Asia/Aden
+    TIMEZONE_ASIA_ALMATY,                     // Asia/Almaty
+    TIMEZONE_ASIA_AMMAN,                      // Asia/Amman
+    TIMEZONE_ASIA_ANADYR,                     // Asia/Anadyr
+    TIMEZONE_ASIA_AQTAU,                      // Asia/Aqtau
+    TIMEZONE_ASIA_AQTOBE,                     // Asia/Aqtobe
+    TIMEZONE_ASIA_ASHGABAT,                   // Asia/Ashgabat
+    TIMEZONE_ASIA_ATYRAU,                     // Asia/Atyrau
+    TIMEZONE_ASIA_BAGHDAD,                    // Asia/Baghdad
+    TIMEZONE_ASIA_BAHRAIN,                    // Asia/Bahrain
+    TIMEZONE_ASIA_BAKU,                       // Asia/Baku
+    TIMEZONE_ASIA_BANGKOK,                    // Asia/Bangkok
+    TIMEZONE_ASIA_BARNAUL,                    // Asia/Barnaul
+    TIMEZONE_ASIA_BEIRUT,                     // Asia/Beirut
+    TIMEZONE_ASIA_BISHKEK,                    // Asia/Bishkek
+    TIMEZONE_ASIA_BRUNEI,                     // Asia/Brunei
+    TIMEZONE_ASIA_CALCUTTA,                   // Asia/Calcutta
+    TIMEZONE_ASIA_CHITA,                      // Asia/Chita
+    TIMEZONE_ASIA_CHOIBALSAN,                 // Asia/Choibalsan
+    TIMEZONE_ASIA_COLOMBO,                    // Asia/Colombo
+    TIMEZONE_ASIA_DAMASCUS,                   // Asia/Damascus
+    TIMEZONE_ASIA_DHAKA,                      // Asia/Dhaka
+    TIMEZONE_ASIA_DILI,                       // Asia/Dili
+    TIMEZONE_ASIA_DUBAI,                      // Asia/Dubai
+    TIMEZONE_ASIA_DUSHANBE,                   // Asia/Dushanbe
+    TIMEZONE_ASIA_FAMAGUSTA,                  // Asia/Famagusta
+    TIMEZONE_ASIA_GAZA,                       // Asia/Gaza
+    TIMEZONE_ASIA_HEBRON,                     // Asia/Hebron
+    TIMEZONE_ASIA_HONG_KONG,                  // Asia/Hong_Kong
+    TIMEZONE_ASIA_HOVD,                       // Asia/Hovd
+    TIMEZONE_ASIA_IRKUTSK,                    // Asia/Irkutsk
+    TIMEZONE_ASIA_JAKARTA,                    // Asia/Jakarta
+    TIMEZONE_ASIA_JAYAPURA,                   // Asia/Jayapura
+    TIMEZONE_ASIA_JERUSALEM,                  // Asia/Jerusalem
+    TIMEZONE_ASIA_KABUL,                      // Asia/Kabul
+    TIMEZONE_ASIA_KAMCHATKA,                  // Asia/Kamchatka
+    TIMEZONE_ASIA_KARACHI,                    // Asia/Karachi
+    TIMEZONE_ASIA_KATMANDU,                   // Asia/Katmandu
+    TIMEZONE_ASIA_KHANDYGA,                   // Asia/Khandyga
+    TIMEZONE_ASIA_KRASNOYARSK,                // Asia/Krasnoyarsk
+    TIMEZONE_ASIA_KUALA_LUMPUR,               // Asia/Kuala_Lumpur
+    TIMEZONE_ASIA_KUCHING,                    // Asia/Kuching
+    TIMEZONE_ASIA_KUWAIT,                     // Asia/Kuwait
+    TIMEZONE_ASIA_MACAU,                      // Asia/Macau
+    TIMEZONE_ASIA_MAGADAN,                    // Asia/Magadan
+    TIMEZONE_ASIA_MAKASSAR,                   // Asia/Makassar
+    TIMEZONE_ASIA_MANILA,                     // Asia/Manila
+    TIMEZONE_ASIA_MUSCAT,                     // Asia/Muscat
+    TIMEZONE_ASIA_NICOSIA,                    // Asia/Nicosia
+    TIMEZONE_ASIA_NOVOKUZNETSK,               // Asia/Novokuznetsk
+    TIMEZONE_ASIA_NOVOSIBIRSK,                // Asia/Novosibirsk
+    TIMEZONE_ASIA_OMSK,                       // Asia/Omsk
+    TIMEZONE_ASIA_ORAL,                       // Asia/Oral
+    TIMEZONE_ASIA_PHNOM_PENH,                 // Asia/Phnom_Penh
+    TIMEZONE_ASIA_PONTIANAK,                  // Asia/Pontianak
+    TIMEZONE_ASIA_PYONGYANG,                  // Asia/Pyongyang
+    TIMEZONE_ASIA_QATAR,                      // Asia/Qatar
+    TIMEZONE_ASIA_QOSTANAY,                   // Asia/Qostanay
+    TIMEZONE_ASIA_QYZYLORDA,                  // Asia/Qyzylorda
+    TIMEZONE_ASIA_RANGOON,                    // Asia/Rangoon
+    TIMEZONE_ASIA_RIYADH,                     // Asia/Riyadh
+    TIMEZONE_ASIA_SAIGON,                     // Asia/Saigon
+    TIMEZONE_ASIA_SAKHALIN,                   // Asia/Sakhalin
+    TIMEZONE_ASIA_SAMARKAND,                  // Asia/Samarkand
+    TIMEZONE_ASIA_SEOUL,                      // Asia/Seoul
+    TIMEZONE_ASIA_SHANGHAI,                   // Asia/Shanghai
+    TIMEZONE_ASIA_SINGAPORE,                  // Asia/Singapore
+    TIMEZONE_ASIA_SREDNEKOLYMSK,              // Asia/Srednekolymsk
+    TIMEZONE_ASIA_TAIPEI,                     // Asia/Taipei
+    TIMEZONE_ASIA_TASHKENT,                   // Asia/Tashkent
+    TIMEZONE_ASIA_TBILISI,                    // Asia/Tbilisi
+    TIMEZONE_ASIA_TEHRAN,                     // Asia/Tehran
+    TIMEZONE_ASIA_THIMPHU,                    // Asia/Thimphu
+    TIMEZONE_ASIA_TOKYO,                      // Asia/Tokyo
+    TIMEZONE_ASIA_TOMSK,                      // Asia/Tomsk
+    TIMEZONE_ASIA_ULAANBAATAR,                // Asia/Ulaanbaatar
+    TIMEZONE_ASIA_URUMQI,                     // Asia/Urumqi
+    TIMEZONE_ASIA_UST_NERA,                   // Asia/Ust-Nera
+    TIMEZONE_ASIA_VIENTIANE,                  // Asia/Vientiane
+    TIMEZONE_ASIA_VLADIVOSTOK,                // Asia/Vladivostok
+    TIMEZONE_ASIA_YAKUTSK,                    // Asia/Yakutsk
+    TIMEZONE_ASIA_YEKATERINBURG,              // Asia/Yekaterinburg
+    TIMEZONE_ASIA_YEREVAN,                    // Asia/Yerevan
+    TIMEZONE_ATLANTIC_AZORES,                 // Atlantic/Azores
+    TIMEZONE_ATLANTIC_BERMUDA,                // Atlantic/Bermuda
+    TIMEZONE_ATLANTIC_CANARY,                 // Atlantic/Canary
+    TIMEZONE_ATLANTIC_CAPE_VERDE,             // Atlantic/Cape_Verde
+    TIMEZONE_ATLANTIC_FAEROE,                 // Atlantic/Faeroe
+    TIMEZONE_ATLANTIC_MADEIRA,                // Atlantic/Madeira
+    TIMEZONE_ATLANTIC_REYKJAVIK,              // Atlantic/Reykjavik
+    TIMEZONE_ATLANTIC_SOUTH_GEORGIA,          // Atlantic/South_Georgia
+    TIMEZONE_ATLANTIC_ST_HELENA,              // Atlantic/St_Helena
+    TIMEZONE_ATLANTIC_STANLEY,                // Atlantic/Stanley
+    TIMEZONE_AUSTRALIA_ADELAIDE,              // Australia/Adelaide
+    TIMEZONE_AUSTRALIA_BRISBANE,              // Australia/Brisbane
+    TIMEZONE_AUSTRALIA_BROKEN_HILL,           // Australia/Broken_Hill
+    TIMEZONE_AUSTRALIA_DARWIN,                // Australia/Darwin
+    TIMEZONE_AUSTRALIA_EUCLA,                 // Australia/Eucla
+    TIMEZONE_AUSTRALIA_HOBART,                // Australia/Hobart
+    TIMEZONE_AUSTRALIA_LINDEMAN,              // Australia/Lindeman
+    TIMEZONE_AUSTRALIA_LORD_HOWE,             // Australia/Lord_Howe
+    TIMEZONE_AUSTRALIA_MELBOURNE,             // Australia/Melbourne
+    TIMEZONE_AUSTRALIA_PERTH,                 // Australia/Perth
+    TIMEZONE_AUSTRALIA_SYDNEY,                // Australia/Sydney
+    TIMEZONE_EUROPE_AMSTERDAM,                // Europe/Amsterdam
+    TIMEZONE_EUROPE_ANDORRA,                  // Europe/Andorra
+    TIMEZONE_EUROPE_ASTRAKHAN,                // Europe/Astrakhan
+    TIMEZONE_EUROPE_ATHENS,                   // Europe/Athens
+    TIMEZONE_EUROPE_BELGRADE,                 // Europe/Belgrade
+    TIMEZONE_EUROPE_BERLIN,                   // Europe/Berlin
+    TIMEZONE_EUROPE_BRATISLAVA,               // Europe/Bratislava
+    TIMEZONE_EUROPE_BRUSSELS,                 // Europe/Brussels
+    TIMEZONE_EUROPE_BUCHAREST,                // Europe/Bucharest
+    TIMEZONE_EUROPE_BUDAPEST,                 // Europe/Budapest
+    TIMEZONE_EUROPE_BUSINGEN,                 // Europe/Busingen
+    TIMEZONE_EUROPE_CHISINAU,                 // Europe/Chisinau
+    TIMEZONE_EUROPE_COPENHAGEN,               // Europe/Copenhagen
+    TIMEZONE_EUROPE_DUBLIN,                   // Europe/Dublin
+    TIMEZONE_EUROPE_GIBRALTAR,                // Europe/Gibraltar
+    TIMEZONE_EUROPE_GUERNSEY,                 // Europe/Guernsey
+    TIMEZONE_EUROPE_HELSINKI,                 // Europe/Helsinki
+    TIMEZONE_EUROPE_ISLE_OF_MAN,              // Europe/Isle_of_Man
+    TIMEZONE_EUROPE_ISTANBUL,                 // Europe/Istanbul
+    TIMEZONE_EUROPE_JERSEY,                   // Europe/Jersey
+    TIMEZONE_EUROPE_KALININGRAD,              // Europe/Kaliningrad
+    TIMEZONE_EUROPE_KIEV,                     // Europe/Kiev
+    TIMEZONE_EUROPE_KIROV,                    // Europe/Kirov
+    TIMEZONE_EUROPE_LISBON,                   // Europe/Lisbon
+    TIMEZONE_EUROPE_LJUBLJANA,                // Europe/Ljubljana
+    TIMEZONE_EUROPE_LONDON,                   // Europe/London
+    TIMEZONE_EUROPE_LUXEMBOURG,               // Europe/Luxembourg
+    TIMEZONE_EUROPE_MADRID,                   // Europe/Madrid
+    TIMEZONE_EUROPE_MALTA,                    // Europe/Malta
+    TIMEZONE_EUROPE_MARIEHAMN,                // Europe/Mariehamn
+    TIMEZONE_EUROPE_MINSK,                    // Europe/Minsk
+    TIMEZONE_EUROPE_MONACO,                   // Europe/Monaco
+    TIMEZONE_EUROPE_MOSCOW,                   // Europe/Moscow
+    TIMEZONE_EUROPE_OSLO,                     // Europe/Oslo
+    TIMEZONE_EUROPE_PARIS,                    // Europe/Paris
+    TIMEZONE_EUROPE_PODGORICA,                // Europe/Podgorica
+    TIMEZONE_EUROPE_PRAGUE,                   // Europe/Prague
+    TIMEZONE_EUROPE_RIGA,                     // Europe/Riga
+    TIMEZONE_EUROPE_ROME,                     // Europe/Rome
+    TIMEZONE_EUROPE_SAMARA,                   // Europe/Samara
+    TIMEZONE_EUROPE_SAN_MARINO,               // Europe/San_Marino
+    TIMEZONE_EUROPE_SARAJEVO,                 // Europe/Sarajevo
+    TIMEZONE_EUROPE_SARATOV,                  // Europe/Saratov
+    TIMEZONE_EUROPE_SIMFEROPOL,               // Europe/Simferopol
+    TIMEZONE_EUROPE_SKOPJE,                   // Europe/Skopje
+    TIMEZONE_EUROPE_SOFIA,                    // Europe/Sofia
+    TIMEZONE_EUROPE_STOCKHOLM,                // Europe/Stockholm
+    TIMEZONE_EUROPE_TALLINN,                  // Europe/Tallinn
+    TIMEZONE_EUROPE_TIRANE,                   // Europe/Tirane
+    TIMEZONE_EUROPE_ULYANOVSK,                // Europe/Ulyanovsk
+    TIMEZONE_EUROPE_VADUZ,                    // Europe/Vaduz
+    TIMEZONE_EUROPE_VATICAN,                  // Europe/Vatican
+    TIMEZONE_EUROPE_VIENNA,                   // Europe/Vienna
+    TIMEZONE_EUROPE_VILNIUS,                  // Europe/Vilnius
+    TIMEZONE_EUROPE_VOLGOGRAD,                // Europe/Volgograd
+    TIMEZONE_EUROPE_WARSAW,                   // Europe/Warsaw
+    TIMEZONE_EUROPE_ZAGREB,                   // Europe/Zagreb
+    TIMEZONE_EUROPE_ZURICH,                   // Europe/Zurich
+    TIMEZONE_INDIAN_ANTANANARIVO,             // Indian/Antananarivo
+    TIMEZONE_INDIAN_CHAGOS,                   // Indian/Chagos
+    TIMEZONE_INDIAN_CHRISTMAS,                // Indian/Christmas
+    TIMEZONE_INDIAN_COCOS,                    // Indian/Cocos
+    TIMEZONE_INDIAN_COMORO,                   // Indian/Comoro
+    TIMEZONE_INDIAN_KERGUELEN,                // Indian/Kerguelen
+    TIMEZONE_INDIAN_MAHE,                     // Indian/Mahe
+    TIMEZONE_INDIAN_MALDIVES,                 // Indian/Maldives
+    TIMEZONE_INDIAN_MAURITIUS,                // Indian/Mauritius
+    TIMEZONE_INDIAN_MAYOTTE,                  // Indian/Mayotte
+    TIMEZONE_INDIAN_REUNION,                  // Indian/Reunion
+    TIMEZONE_PACIFIC_APIA,                    // Pacific/Apia
+    TIMEZONE_PACIFIC_AUCKLAND,                // Pacific/Auckland
+    TIMEZONE_PACIFIC_BOUGAINVILLE,            // Pacific/Bougainville
+    TIMEZONE_PACIFIC_CHATHAM,                 // Pacific/Chatham
+    TIMEZONE_PACIFIC_EASTER,                  // Pacific/Easter
+    TIMEZONE_PACIFIC_EFATE,                   // Pacific/Efate
+    TIMEZONE_PACIFIC_ENDERBURY,               // Pacific/Enderbury
+    TIMEZONE_PACIFIC_FAKAOFO,                 // Pacific/Fakaofo
+    TIMEZONE_PACIFIC_FIJI,                    // Pacific/Fiji
+    TIMEZONE_PACIFIC_FUNAFUTI,                // Pacific/Funafuti
+    TIMEZONE_PACIFIC_GALAPAGOS,               // Pacific/Galapagos
+    TIMEZONE_PACIFIC_GAMBIER,                 // Pacific/Gambier
+    TIMEZONE_PACIFIC_GUADALCANAL,             // Pacific/Guadalcanal
+    TIMEZONE_PACIFIC_GUAM,                    // Pacific/Guam
+    TIMEZONE_PACIFIC_HONOLULU,                // Pacific/Honolulu
+    TIMEZONE_PACIFIC_KIRITIMATI,              // Pacific/Kiritimati
+    TIMEZONE_PACIFIC_KOSRAE,                  // Pacific/Kosrae
+    TIMEZONE_PACIFIC_KWAJALEIN,               // Pacific/Kwajalein
+    TIMEZONE_PACIFIC_MAJURO,                  // Pacific/Majuro
+    TIMEZONE_PACIFIC_MARQUESAS,               // Pacific/Marquesas
+    TIMEZONE_PACIFIC_MIDWAY,                  // Pacific/Midway
+    TIMEZONE_PACIFIC_NAURU,                   // Pacific/Nauru
+    TIMEZONE_PACIFIC_NIUE,                    // Pacific/Niue
+    TIMEZONE_PACIFIC_NORFOLK,                 // Pacific/Norfolk
+    TIMEZONE_PACIFIC_NOUMEA,                  // Pacific/Noumea
+    TIMEZONE_PACIFIC_PAGO_PAGO,               // Pacific/Pago_Pago
+    TIMEZONE_PACIFIC_PALAU,                   // Pacific/Palau
+    TIMEZONE_PACIFIC_PITCAIRN,                // Pacific/Pitcairn
+    TIMEZONE_PACIFIC_PONAPE,                  // Pacific/Ponape
+    TIMEZONE_PACIFIC_PORT_MORESBY,            // Pacific/Port_Moresby
+    TIMEZONE_PACIFIC_RAROTONGA,               // Pacific/Rarotonga
+    TIMEZONE_PACIFIC_SAIPAN,                  // Pacific/Saipan
+    TIMEZONE_PACIFIC_TAHITI,                  // Pacific/Tahiti
+    TIMEZONE_PACIFIC_TARAWA,                  // Pacific/Tarawa
+    TIMEZONE_PACIFIC_TONGATAPU,               // Pacific/Tongatapu
+    TIMEZONE_PACIFIC_TRUK,                    // Pacific/Truk
+    TIMEZONE_PACIFIC_WAKE,                    // Pacific/Wake
+    TIMEZONE_PACIFIC_WALLIS,                  // Pacific/Wallis
+} timezone_e;
+
+typedef enum {
+    TIMESTAMP_UNIT_S,
+    TIMESTAMP_UNIT_MS,
+} timestamp_unit_e;
+
+//---------------------------------------------------------------------------
+// Functions
+//---------------------------------------------------------------------------
+
+struct tm timestamp_to_datatime(time_t timestamp, timezone_e eTimezone, timestamp_unit_e eUnit);
+time_t    datatime_to_timestamp(struct tm* pDataTime, timezone_e eTimezone, timestamp_unit_e eUnit);
+
+#if CONFIG_DEMOS_SW
+void Timestamp_Test(void);
+#endif
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
