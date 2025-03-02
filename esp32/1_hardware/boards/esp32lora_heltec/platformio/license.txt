@@ -1,0 +1,5 @@
+https://resource.heltec.cn/search
+
+Type	id	license	Production Place	Manufacture Data
+ESP32	cc7e4efa12f4	0xDD0B59D8,0x0951B8A7,0xF8C70AA9,0xC80D468A	Chengdu	2022/11/11 19:31:22
+ESP32	f47e4efa12f4	0x80005936,0x6AC4783B,0xF45C069F,0xC84546C0	Chngdu	2022/11/11 19:23:56
