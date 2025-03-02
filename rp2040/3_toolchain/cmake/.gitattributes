@@ -1,0 +1,2 @@
+gcc-arm-none-eabi-10.3-2021.10-win32.exe filter=lfs diff=lfs merge=lfs -text
+pico-sdk.zip filter=lfs diff=lfs merge=lfs -text
