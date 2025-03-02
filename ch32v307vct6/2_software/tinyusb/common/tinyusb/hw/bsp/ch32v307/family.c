@@ -98,7 +98,7 @@ void board_init(void) {
   RCC_USBHSPLLCKREFCLKConfig(RCC_USBHSPLLCKREFCLK_4M);
   RCC_USBHSPHYPLLALIVEcmd(ENABLE);
   RCC_AHBPeriphClockCmd(RCC_AHBPeriph_USBHS, ENABLE);
-  NVIC_EnableIRQ(USBHS_IRQn);
+//  NVIC_EnableIRQ(USBHS_IRQn);
 #endif
 
   // Fullspeed USB
