@@ -6,7 +6,7 @@
  * Description        : Main program body.
  *********************************************************************************
  * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
- * Attention: This software (modified or not) and binary are used for 
+ * Attention: This software (modified or not) and binary are used for
  * microcontroller manufactured by Nanjing Qinheng Microelectronics.
  *******************************************************************************/
 
@@ -27,10 +27,10 @@
 #define LED_SPI_MODE 1
 #define LED_PWM_MODE 2
 
-#define LED_MODE LED_SPI_MODE
-//#define LED_MODE LED_PWM_MODE
+//#define LED_MODE LED_SPI_MODE
+#define LED_MODE LED_PWM_MODE
 
-#define Pixel_NUM (8)
+#define Pixel_NUM (64)
 
 #define LIST_SIZE(list) (sizeof(list)/sizeof(list[0]))
 #define hex2rgb(c) (((c)>>16)&0xff),(((c)>>8)&0xff),((c)&0xff)
@@ -129,7 +129,6 @@ void SPI_1Lines_HalfDuplex_Init(void)
     SPI_InitTypeDef SPI_InitStructure= {0};
 
     RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOA | RCC_APB2Periph_SPI1, ENABLE );
-
 
     // the clock output
 //    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;
@@ -403,25 +402,23 @@ uint32_t color_list[] = {
  */
 void led_example_0(void)
 {
-    uint32_t i = 0, j = 0;
-    uint32_t c = 0x0f0f00;
+    uint32_t i = 0;
+
     while(1) {
-        c = color_list[i];
-        uint32_t next_color = color_list[i+1];
-        i++;
-        if((i+1)>=LIST_SIZE(color_list)) {
+
+        uint32_t color = color_list[i];
+
+        for (int var = 0; var < Pixel_NUM; ++var) {
+            setPixelColor(var,hex2rgb(color));
+        }
+
+        w2812_sync();
+
+        if((++i)>=LIST_SIZE(color_list)) {
             i=0;
         }
-        for(j = 0; j<MAX_STEP;j+=1) {
-            uint32_t color = interpolateColors(c,next_color,j);
-            for (int var = 0; var < Pixel_NUM; ++var) {
-                setPixelColor(var,hex2rgb(color));
 
-            }
-            w2812_sync();
-            Delay_Ms(10);
-
-        }
+        Delay_Ms(1000);
 
     }
 }
@@ -492,9 +489,10 @@ int main(void)
 {
     uint16_t i = 0;
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    SystemCoreClockUpdate();
     Delay_Init();
     USART_Printf_Init(115200);
-    printf("SystemClk:%d\r\n", SystemCoreClock);
+    printf("SystemClk:%d\r\n", SystemCoreClock); // 96M
 
     // Turn off all LEDs
     for (i = 0; i < Pixel_NUM; i++) {
