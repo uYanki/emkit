@@ -1,0 +1,5 @@
+set(COMPONENT_SRCS "dnsserver.c" "webserver.c") 
+set(COMPONENT_PRIV_REQUIRES "driver" "esp_wifi" "nvs_flash" "json" "mbedtls")
+set(COMPONENT_ADD_INCLUDEDIRS  .)
+set(COMPONENT_EMBED_FILES "index.html")
+register_component()
