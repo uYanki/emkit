@@ -25,6 +25,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>Core</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>Peripheral</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -33,6 +38,16 @@
 			<name>cherryusb</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>Core/core_riscv.c</name>
+			<type>1</type>
+			<location>C:/stmkit/platform/CH32V30x_Lib/Core/core_riscv.c</location>
+		</link>
+		<link>
+			<name>Core/core_riscv.h</name>
+			<type>1</type>
+			<location>C:/stmkit/platform/CH32V30x_Lib/Core/core_riscv.h</location>
 		</link>
 		<link>
 			<name>Peripheral/inc</name>

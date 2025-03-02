@@ -12,6 +12,7 @@
 #include "eth_driver.h"
 #include "ch32v30x_it.h"
 #include "bsp_uart.h"
+#include "core_riscv.h"
 
 void NMI_Handler(void) __attribute__((interrupt("WCH-Interrupt-fast")));
 void HardFault_Handler(void) __attribute__((interrupt("WCH-Interrupt-fast")));
