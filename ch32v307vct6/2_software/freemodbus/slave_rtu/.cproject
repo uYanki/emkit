@@ -63,7 +63,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/User}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Peripheral/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/stmkit/platform/CH32V30x_Lib/Peripheral/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../common/freemodbus/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../common/freemodbus/port&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../common/freemodbus/rtu&quot;"/>
