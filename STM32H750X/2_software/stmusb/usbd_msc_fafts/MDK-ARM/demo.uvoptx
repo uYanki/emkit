@@ -339,7 +339,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_pcd.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -351,7 +351,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_pcd_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -363,7 +363,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_ll_usb.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -375,7 +375,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_rcc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -387,7 +387,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_rcc_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -399,7 +399,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_flash.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -411,7 +411,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_flash_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -423,7 +423,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_gpio.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -435,7 +435,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_hsem.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -447,7 +447,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_dma.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -459,7 +459,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_dma_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -471,7 +471,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_mdma.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -483,7 +483,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_pwr.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -495,7 +495,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_pwr_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -507,7 +507,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_cortex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -519,7 +519,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -531,7 +531,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_i2c.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -543,7 +543,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_i2c_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -555,7 +555,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_exti.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -567,7 +567,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_qspi.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -579,7 +579,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_rtc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -591,7 +591,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_rtc_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -603,7 +603,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_ll_sdmmc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -615,7 +615,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_ll_delayblock.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -627,7 +627,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_sd.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -639,7 +639,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_sd_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -651,7 +651,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_tim.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -663,7 +663,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_tim_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -675,7 +675,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_uart.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -687,7 +687,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c</PathWithFileName>
       <FilenameWithoutPath>stm32h7xx_hal_uart_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -727,7 +727,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c</PathWithFileName>
       <FilenameWithoutPath>usbd_core.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -739,7 +739,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c</PathWithFileName>
       <FilenameWithoutPath>usbd_ctlreq.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -751,7 +751,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c</PathWithFileName>
       <FilenameWithoutPath>usbd_ioreq.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -763,7 +763,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c</PathWithFileName>
       <FilenameWithoutPath>usbd_msc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -775,7 +775,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_bot.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_bot.c</PathWithFileName>
       <FilenameWithoutPath>usbd_msc_bot.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -787,7 +787,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_data.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_data.c</PathWithFileName>
       <FilenameWithoutPath>usbd_msc_data.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -799,7 +799,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_scsi.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_scsi.c</PathWithFileName>
       <FilenameWithoutPath>usbd_msc_scsi.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -859,7 +859,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/Third_Party/FatFs/src/diskio.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/Third_Party/FatFs/src/diskio.c</PathWithFileName>
       <FilenameWithoutPath>diskio.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -871,7 +871,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/Third_Party/FatFs/src/ff.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/Third_Party/FatFs/src/ff.c</PathWithFileName>
       <FilenameWithoutPath>ff.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -883,7 +883,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c</PathWithFileName>
       <FilenameWithoutPath>ff_gen_drv.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -895,7 +895,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>C:/stmkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/Third_Party/FatFs/src/option/syscall.c</PathWithFileName>
+      <PathWithFileName>C:/emkit/platform/STM32Cube_FW_H7_V1.11.0/Middlewares/Third_Party/FatFs/src/option/syscall.c</PathWithFileName>
       <FilenameWithoutPath>syscall.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
