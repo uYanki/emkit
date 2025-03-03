@@ -43,8 +43,8 @@
  * something that better describes your network interface.
  */
 
+#include <Jubei_eth_driver.h>
 #include "lwip/opt.h"
-#include "Jubei_eth_driver.h"
 #include "string.h"
 
 #if 1 /* don't build, this is only a skeleton, see previous comment */
