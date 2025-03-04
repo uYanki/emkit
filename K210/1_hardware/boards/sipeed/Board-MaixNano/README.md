@@ -1,0 +1,1 @@
+http://dl.sipeed.com/shareURL/MAIX/HDK/Sipeed-Maix-Nano

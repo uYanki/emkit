@@ -1,0 +1,15 @@
+﻿Share the PCB package(NGFF footpring) of M1n module: https://bbs.elecfans.com/jishu_2037182_1_1.html
+
+
+It's very easy to use the NGFF footpring.
+
+1.Add the .schdoc and .PCBdoc to your project.
+
+2.Edit the .schdoc and update to .pcbdoc
+3.Layout
+4.Finish your work!
+
+When using other boards, please pay attention to the position of the SMT nut.
+If you want to buy the NGFF female socket,you can search the key word "NGFF B-KEY".
+
+This connector is available in a variety of heights.

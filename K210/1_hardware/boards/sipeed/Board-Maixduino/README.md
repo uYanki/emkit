@@ -1,0 +1,1 @@
+https://dl.sipeed.com/shareURL/MAIX/HDK/Sipeed-Maixduino/Maixduino
