@@ -1,0 +1,838 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://wiki.luatos.com/_static/bom/Air001.html
+Subject: Air001-Board BOM
+Date: Wed, 5 Mar 2025 13:40:41 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--AXAIX3oRG8cadMaM4KG09wcbXujCboKClcOBsa7FTo----"
+
+
+------MultipartBoundary--AXAIX3oRG8cadMaM4KG09wcbXujCboKClcOBsa7FTo----
+Content-Type: text/html
+Content-ID: <frame-A7BD82521512CC41D6FA1E8F9C6FD30A@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://wiki.luatos.com/_static/bom/Air001.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-9cf4cb18-8f37-4a64-b080-c952193617c8@mhtml.blink" /><l=
+ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-70efa64a-1fa0-41d2=
+-94e2-ba3f8cabc8f6@mhtml.blink" />
+ =20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+  <title>Air001-Board BOM</title>
+ =20
+ =20
+</head>
+
+<body>
+
+<div id=3D"topmostdiv" class=3D"topmostdiv">
+  <div id=3D"top">
+    <div style=3D"float: right; height: 100%;">
+      <div class=3D"hideonprint menu" style=3D"float: right; top: 8px;">
+        <button class=3D"menubtn"></button>
+        <div class=3D"menu-content">
+          <label class=3D"menu-label menu-label-top" style=3D"width: calc(5=
+0% - 18px)">
+            <input id=3D"darkmodeCheckbox" type=3D"checkbox">
+            Dark mode
+          </label><!-- This comment eats space! All of it!
+          --><label class=3D"menu-label menu-label-top" style=3D"width: cal=
+c(50% - 17px); border-left: 0;">
+            <input id=3D"fullscreenCheckbox" type=3D"checkbox">
+            Full Screen
+          </label>
+          <label class=3D"menu-label" style=3D"width: calc(50% - 18px)">
+            <input id=3D"fabricationCheckbox" type=3D"checkbox" checked=3D"=
+">
+            Fab layer
+          </label><!-- This comment eats space! All of it!
+          --><label class=3D"menu-label" style=3D"width: calc(50% - 17px); =
+border-left: 0;">
+            <input id=3D"silkscreenCheckbox" type=3D"checkbox" checked=3D""=
+>
+            Silkscreen
+          </label>
+          <label class=3D"menu-label" style=3D"width: calc(50% - 18px)">
+            <input id=3D"referencesCheckbox" type=3D"checkbox" checked=3D""=
+>
+            References
+          </label><!-- This comment eats space! All of it!
+          --><label class=3D"menu-label" style=3D"width: calc(50% - 17px); =
+border-left: 0;">
+            <input id=3D"valuesCheckbox" type=3D"checkbox" checked=3D"">
+            Values
+          </label>
+          <div id=3D"tracksAndZonesCheckboxes">
+            <label class=3D"menu-label" style=3D"width: calc(50% - 18px)">
+              <input id=3D"tracksCheckbox" type=3D"checkbox" checked=3D"">
+              Tracks
+            </label><!-- This comment eats space! All of it!
+            --><label class=3D"menu-label" style=3D"width: calc(50% - 17px)=
+; border-left: 0;">
+              <input id=3D"zonesCheckbox" type=3D"checkbox" checked=3D"">
+              Zones
+            </label>
+          </div>
+          <label class=3D"menu-label" style=3D"width: calc(50% - 18px)">
+            <input id=3D"padsCheckbox" type=3D"checkbox" checked=3D"">
+            Pads
+          </label><!-- This comment eats space! All of it!
+          --><label class=3D"menu-label" style=3D"width: calc(50% - 17px); =
+border-left: 0;">
+            <input id=3D"dnpOutlineCheckbox" type=3D"checkbox" checked=3D""=
+>
+            DNP outlined
+          </label>
+          <label class=3D"menu-label">
+            <input id=3D"highlightpin1Checkbox" type=3D"checkbox">
+            Highlight first pin
+          </label>
+          <label class=3D"menu-label">
+            <input id=3D"dragCheckbox" type=3D"checkbox" checked=3D"">
+            Continuous redraw on drag
+          </label>
+          <label class=3D"menu-label">
+            <span>Board rotation</span>
+            <span style=3D"float: right"><span id=3D"rotationDegree">0</spa=
+n>=C2=B0</span>
+            <input id=3D"boardRotation" type=3D"range" min=3D"-36" max=3D"3=
+6" value=3D"0" class=3D"slider">
+          </label>
+          <label class=3D"menu-label">
+            <div style=3D"margin-left: 5px">Bom checkboxes</div>
+            <input id=3D"bomCheckboxes" class=3D"menu-textbox" type=3D"text=
+">
+          </label>
+          <label class=3D"menu-label" style=3D"display: inline-block;">
+            <div style=3D"margin-left: 5px">Mark when checked</div>
+            <div id=3D"markWhenCheckedContainer"><div class=3D"radio-contai=
+ner"><input type=3D"radio" name=3D"markWhenChecked" value=3D"" id=3D"markWh=
+enChecked-"><label for=3D"markWhenChecked-">None</label></div><div class=3D=
+"radio-container"><input type=3D"radio" name=3D"markWhenChecked" value=3D"S=
+ourced" id=3D"markWhenChecked-Sourced"><label for=3D"markWhenChecked-Source=
+d">Sourced</label></div><div class=3D"radio-container"><input type=3D"radio=
+" name=3D"markWhenChecked" value=3D"Placed" id=3D"markWhenChecked-Placed"><=
+label for=3D"markWhenChecked-Placed">Placed</label></div></div>
+          </label>
+          <label class=3D"menu-label">
+            <span class=3D"shameless-plug">
+              <span>Created using</span>
+              <a id=3D"github-link" target=3D"blank" href=3D"https://github=
+.com/openscopeproject/InteractiveHtmlBom">InteractiveHtmlBom&nbsp;v2.5</a>
+              <a target=3D"blank" title=3D"Mouse and keyboard help" href=3D=
+"https://github.com/openscopeproject/InteractiveHtmlBom/wiki/Usage#bom-page=
+-mouse-actions" style=3D"text-decoration: none;"><label class=3D"help-link"=
+>?</label></a>
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class=3D"button-container hideonprint" style=3D"float: right; po=
+sition: relative; top: 8px">
+        <button id=3D"fl-btn" class=3D"left-most-button" title=3D"Front onl=
+y">F
+        </button>
+        <button id=3D"fb-btn" class=3D"middle-button depressed" title=3D"Fr=
+ont and Back">FB
+        </button>
+        <button id=3D"bl-btn" class=3D"right-most-button" title=3D"Back onl=
+y">B
+        </button>
+      </div>
+      <div class=3D"button-container hideonprint" style=3D"float: right; po=
+sition: relative; top: 8px">
+        <button id=3D"bom-btn" class=3D"left-most-button" title=3D"BOM only=
+"></button>
+        <button id=3D"lr-btn" class=3D"middle-button depressed" title=3D"BO=
+M left, drawings right"></button>
+        <button id=3D"tb-btn" class=3D"right-most-button" title=3D"BOM top,=
+ drawings bot"></button>
+      </div>
+      <div class=3D"button-container hideonprint" style=3D"float: right; po=
+sition: relative; top: 8px">
+        <button id=3D"bom-grouped-btn" class=3D"left-most-button depressed"=
+ title=3D"Grouped BOM"></button>
+        <button id=3D"bom-ungrouped-btn" class=3D"middle-button" title=3D"U=
+ngrouped BOM"></button>
+        <button id=3D"bom-netlist-btn" class=3D"right-most-button" title=3D=
+"Netlist"></button>
+      </div>
+      <div class=3D"hideonprint menu" style=3D"float: right; top: 8px;">
+        <button class=3D"statsbtn"></button>
+        <div class=3D"menu-content">
+          <table class=3D"stats">
+            <tbody>
+              <tr>
+                <td width=3D"40%">Board stats</td>
+                <td>Front</td>
+                <td>Back</td>
+                <td>Total</td>
+              </tr>
+              <tr>
+                <td>Components</td>
+                <td id=3D"stats-components-front">27</td>
+                <td id=3D"stats-components-back">0</td>
+                <td id=3D"stats-components-total">27</td>
+              </tr>
+              <tr>
+                <td>Groups</td>
+                <td id=3D"stats-groups-front">12</td>
+                <td id=3D"stats-groups-back">0</td>
+                <td id=3D"stats-groups-total">12</td>
+              </tr>
+              <tr>
+                <td>SMD pads</td>
+                <td id=3D"stats-smd-pads-front">98</td>
+                <td id=3D"stats-smd-pads-back">0</td>
+                <td id=3D"stats-smd-pads-total">98</td>
+              </tr>
+              <tr>
+                <td>TH pads</td>
+                <td colspan=3D"3" id=3D"stats-th-pads">6</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class=3D"stats">
+            <colgroup><col width=3D"40%"><col>
+            </colgroup><tbody id=3D"checkbox-stats">
+              <tr>
+                <td colspan=3D"2" style=3D"border-top: 0">Checkboxes</td>
+              </tr>
+            <tr><td>Sourced</td><td id=3D"checkbox-stats-Sourced"><div clas=
+s=3D"bar" style=3D"width: 0%;"></div><div class=3D"text">0/27 (0%)</div></t=
+d></tr><tr><td>Placed</td><td id=3D"checkbox-stats-Placed"><div class=3D"ba=
+r" style=3D"width: 0%;"></div><div class=3D"text">0/27 (0%)</div></td></tr>=
+</tbody>
+          </table>
+        </div>
+      </div>
+      <div class=3D"hideonprint menu" style=3D"float: right; top: 8px;">
+        <button class=3D"iobtn"></button>
+        <div class=3D"menu-content">
+          <div class=3D"menu-label menu-label-top">
+            <div style=3D"margin-left: 5px;">Save board image</div>
+            <div class=3D"flexbox">
+              <input id=3D"render-save-width" class=3D"menu-textbox" type=
+=3D"text" value=3D"1000" placeholder=3D"Width" style=3D"flex-grow: 1; width=
+: 50px;">
+              <span>X</span>
+              <input id=3D"render-save-height" class=3D"menu-textbox" type=
+=3D"text" value=3D"1000" placeholder=3D"Height" style=3D"flex-grow: 1; widt=
+h: 50px;">
+            </div>
+            <label>
+              <input id=3D"render-save-transparent" type=3D"checkbox">
+              Transparent background
+            </label>
+            <div class=3D"flexbox">
+              <button class=3D"savebtn">Front</button>
+              <button class=3D"savebtn">Back</button>
+            </div>
+          </div>
+          <div class=3D"menu-label">
+            <span style=3D"margin-left: 5px;">Config and checkbox state</sp=
+an>
+            <div class=3D"flexbox">
+              <button class=3D"savebtn">Export</button>
+              <button class=3D"savebtn">Import</button>
+            </div>
+          </div>
+          <div class=3D"menu-label">
+            <span style=3D"margin-left: 5px;">Save bom table as</span>
+            <div class=3D"flexbox">
+              <button class=3D"savebtn">csv</button>
+              <button class=3D"savebtn">txt</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id=3D"fileinfodiv" style=3D"overflow: auto;">
+      <table class=3D"fileinfo">
+        <tbody>
+          <tr>
+            <td id=3D"title" class=3D"title" style=3D"width: 70%">Air001-Bo=
+ard</td>
+            <td id=3D"revision" class=3D"title" style=3D"width: 30%">Rev: <=
+/td>
+          </tr>
+          <tr>
+            <td id=3D"company"></td>
+            <td id=3D"filedate">2023-06-25 16:23:58</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id=3D"bot" class=3D"split" style=3D"height: calc(100% - 80px)">
+    <div id=3D"bomdiv" class=3D"split split-horizontal" style=3D"width: cal=
+c(50% - 2.5px);">
+      <div style=3D"width: 100%">
+        <input id=3D"reflookup" class=3D"textbox searchbox reflookup hideon=
+print" type=3D"text" placeholder=3D"Ref lookup">
+        <input id=3D"filter" class=3D"textbox searchbox filter hideonprint"=
+ type=3D"text" placeholder=3D"Filter">
+        <div class=3D"button-container hideonprint" style=3D"float: left; m=
+argin: 0;">
+          <button id=3D"copy" title=3D"Copy bom table to clipboard"></butto=
+n>
+        </div>
+      </div>
+      <div id=3D"dbg"></div>
+      <table class=3D"bom" id=3D"bomtable">
+        <thead id=3D"bomhead"><tr><th class=3D"numCol"><div id=3D"vismenu" =
+class=3D"menu"><div class=3D"visbtn hideonprint"></div><div class=3D"menu-c=
+ontent" id=3D"vismenu-content"><label class=3D"menu-label menu-label-top"><=
+input class=3D"visibility_checkbox" type=3D"checkbox">Checkboxes</label><la=
+bel class=3D"menu-label"><input class=3D"visibility_checkbox" type=3D"check=
+box">References</label><label class=3D"menu-label"><input class=3D"visibili=
+ty_checkbox" type=3D"checkbox">Value</label><label class=3D"menu-label"><in=
+put class=3D"visibility_checkbox" type=3D"checkbox">Footprint</label><label=
+ class=3D"menu-label"><input class=3D"visibility_checkbox" type=3D"checkbox=
+">Quantity</label></div></div></th><th class=3D"bom-checkbox" col_name=3D"b=
+om-checkbox">Sourced<span class=3D"sortmark none"></span><div class=3D"colu=
+mn-spacer"></div><div class=3D"column-width-handle"></div></th><th class=3D=
+"bom-checkbox" col_name=3D"bom-checkbox">Placed<span class=3D"sortmark none=
+"></span><div class=3D"column-spacer"></div><div class=3D"column-width-hand=
+le"></div></th><th class=3D"references" col_name=3D"References" style=3D"wi=
+dth: 28.1095%;">References<span class=3D"sortmark none"></span><div class=
+=3D"column-spacer"></div><div class=3D"column-width-handle"></div></th><th =
+class=3D"value" col_name=3D"Value" style=3D"width: 15.0498%;">Value<span cl=
+ass=3D"sortmark none"></span><div class=3D"column-spacer"></div><div class=
+=3D"column-width-handle"></div></th><th class=3D"footprint" col_name=3D"Foo=
+tprint" style=3D"width: 27.9851%;">Footprint<span class=3D"sortmark none"><=
+/span><div class=3D"column-spacer"></div><div class=3D"column-width-handle"=
+></div></th><th class=3D"quantity" col_name=3D"Quantity" style=3D"width: 8.=
+08458%;">Quantity<span class=3D"sortmark none"></span><div class=3D"column-=
+spacer"></div></th></tr></thead>
+        <tbody id=3D"bombody"><tr id=3D"bomrow1"><td>1</td><td><input type=
+=3D"checkbox"></td><td><input type=3D"checkbox"></td><td>C2, C3, C4, C5</td=
+><td>1u</td><td>C_0402_1005Metric</td><td>4</td></tr><tr id=3D"bomrow2"><td=
+>2</td><td><input type=3D"checkbox"></td><td><input type=3D"checkbox"></td>=
+<td>C1</td><td>0.1u</td><td>C_0402_1005Metric</td><td>1</td></tr><tr id=3D"=
+bomrow3"><td>3</td><td><input type=3D"checkbox"></td><td><input type=3D"che=
+ckbox"></td><td>R1, R2, R3, R8, R9, R10</td><td>5.1k</td><td>R_0402_1005Met=
+ric</td><td>6</td></tr><tr id=3D"bomrow4"><td>4</td><td><input type=3D"chec=
+kbox"></td><td><input type=3D"checkbox"></td><td>R4, R5, R6, R7, R13</td><t=
+d>10k</td><td>R_0402_1005Metric</td><td>5</td></tr><tr id=3D"bomrow5"><td>5=
+</td><td><input type=3D"checkbox"></td><td><input type=3D"checkbox"></td><t=
+d>D2, D3, D4</td><td>LED</td><td>LED_0603_1608Metric</td><td>3</td></tr><tr=
+ id=3D"bomrow6"><td>6</td><td><input type=3D"checkbox"></td><td><input type=
+=3D"checkbox"></td><td>D1</td><td>BDFN2C051V</td><td>DFN1006-2L</td><td>1</=
+td></tr><tr id=3D"bomrow7"><td>7</td><td><input type=3D"checkbox"></td><td>=
+<input type=3D"checkbox"></td><td>U1</td><td>Air001</td><td>TSSOP-20_4.4x6.=
+5mm_P0.65mm</td><td>1</td></tr><tr id=3D"bomrow8"><td>8</td><td><input type=
+=3D"checkbox"></td><td><input type=3D"checkbox"></td><td>U2</td><td>ME6211C=
+33M5G-N</td><td>SOT-23-5</td><td>1</td></tr><tr id=3D"bomrow9"><td>9</td><t=
+d><input type=3D"checkbox"></td><td><input type=3D"checkbox"></td><td>U3</t=
+d><td>LMBT3904DW1T1G</td><td>SOT-363_SC-70-6</td><td>1</td></tr><tr id=3D"b=
+omrow10"><td>10</td><td><input type=3D"checkbox"></td><td><input type=3D"ch=
+eckbox"></td><td>SW1, SW2</td><td>SW_Push</td><td>SW_SPST_PTS810</td><td>2<=
+/td></tr><tr id=3D"bomrow11"><td>11</td><td><input type=3D"checkbox"></td><=
+td><input type=3D"checkbox"></td><td>Q1</td><td>S8550</td><td>SOT-323_SC-70=
+</td><td>1</td></tr><tr id=3D"bomrow12"><td>12</td><td><input type=3D"check=
+box"></td><td><input type=3D"checkbox"></td><td>J17</td><td>USB_C_Receptacl=
+e_USB2.0</td><td>USB_C_Receptacle_Palconn_UTC16-G</td><td>1</td></tr></tbod=
+y>
+      </table>
+    </div>
+    <div class=3D"gutter gutter-horizontal" style=3D"width: 5px;"></div><di=
+v id=3D"canvasdiv" class=3D"split split-horizontal" style=3D"width: calc(50=
+% - 2.5px);">
+      <div id=3D"frontcanvas" class=3D"split" touch-action=3D"none" style=
+=3D"overflow: hidden; height: calc(50% - 2.5px);">
+        <div style=3D"position: relative; width: 100%; height: 100%;">
+          <canvas id=3D"F_bg" style=3D"position: absolute; left: 0px; top: =
+0px; z-index: 0; width: 805px; height: 546px;" width=3D"855" height=3D"580"=
+></canvas>
+          <canvas id=3D"F_fab" style=3D"position: absolute; left: 0px; top:=
+ 0px; z-index: 1; width: 805px; height: 546px;" width=3D"855" height=3D"580=
+"></canvas>
+          <canvas id=3D"F_slk" style=3D"position: absolute; left: 0px; top:=
+ 0px; z-index: 2; width: 805px; height: 546px;" width=3D"855" height=3D"580=
+"></canvas>
+          <canvas id=3D"F_hl" style=3D"position: absolute; left: 0px; top: =
+0px; z-index: 3; width: 805px; height: 546px;" width=3D"855" height=3D"580"=
+></canvas>
+        </div>
+      </div>
+      <div class=3D"gutter gutter-vertical" style=3D"height: 5px;"></div><d=
+iv id=3D"backcanvas" class=3D"split" touch-action=3D"none" style=3D"overflo=
+w: hidden; height: calc(50% - 2.5px);">
+        <div style=3D"position: relative; width: 100%; height: 100%;">
+          <canvas id=3D"B_bg" style=3D"position: absolute; left: 0px; top: =
+0px; z-index: 0; width: 805px; height: 546px;" width=3D"855" height=3D"580"=
+></canvas>
+          <canvas id=3D"B_fab" style=3D"position: absolute; left: 0px; top:=
+ 0px; z-index: 1; width: 805px; height: 546px;" width=3D"855" height=3D"580=
+"></canvas>
+          <canvas id=3D"B_slk" style=3D"position: absolute; left: 0px; top:=
+ 0px; z-index: 2; width: 805px; height: 546px;" width=3D"855" height=3D"580=
+"></canvas>
+          <canvas id=3D"B_hl" style=3D"position: absolute; left: 0px; top: =
+0px; z-index: 3; width: 805px; height: 546px;" width=3D"855" height=3D"580"=
+></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body><div></div></html>
+------MultipartBoundary--AXAIX3oRG8cadMaM4KG09wcbXujCboKClcOBsa7FTo----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-9cf4cb18-8f37-4a64-b080-c952193617c8@mhtml.blink
+
+@charset "utf-8";
+
+:root { --pcb-edge-color: black; --pad-color: #878787; --pad-hole-color: #C=
+CCCCC; --pad-color-highlight: #D04040; --pad-color-highlight-both: #D0D040;=
+ --pad-color-highlight-marked: #44a344; --pin1-outline-color: #ffb629; --pi=
+n1-outline-color-highlight: #ffb629; --pin1-outline-color-highlight-both: #=
+fcbb39; --pin1-outline-color-highlight-marked: #fdbe41; --silkscreen-edge-c=
+olor: #aa4; --silkscreen-polygon-color: #4aa; --silkscreen-text-color: #4aa=
+; --fabrication-edge-color: #907651; --fabrication-polygon-color: #907651; =
+--fabrication-text-color: #a27c24; --track-color: #def5f1; --track-color-hi=
+ghlight: #D04040; --zone-color: #def5f1; --zone-color-highlight: #d0404080;=
+ }
+
+html, body { margin: 0px; height: 100%; font-family: Verdana, sans-serif; }
+
+.dark.topmostdiv { --pcb-edge-color: #eee; --pad-color: #808080; --pin1-out=
+line-color: #ffa800; --pin1-outline-color-highlight: #ccff00; --track-color=
+: #42524f; --zone-color: #42524f; background-color: rgb(37, 44, 48); color:=
+ rgb(238, 238, 238); }
+
+button { background-color: rgb(238, 238, 238); border: 1px solid rgb(136, 1=
+36, 136); color: black; height: 44px; width: 44px; text-align: center; text=
+-decoration: none; display: inline-block; font-size: 14px; font-weight: bol=
+der; }
+
+.dark button { background-color: rgb(195, 183, 181); }
+
+button.depressed { background-color: rgb(0, 170, 0); color: white; }
+
+.dark button.depressed { background-color: rgb(187, 51, 187); }
+
+button:focus { outline: 0px; }
+
+button#tb-btn { background-image: url("data:image/svg+xml,%3Csvg xmlns=3D'h=
+ttp://www.w3.org/2000/svg' viewBox=3D'0 0 8.47 8.47'%3E%3Crect transform=3D=
+'translate(0 -288.53)' ry=3D'1.17' y=3D'288.8' x=3D'.27' height=3D'7.94' wi=
+dth=3D'7.94' fill=3D'%23f9f9f9'/%3E%3Cg transform=3D'translate(0 -288.53)'%=
+3E%3Crect width=3D'7.94' height=3D'7.94' x=3D'.27' y=3D'288.8' ry=3D'1.17' =
+fill=3D'none' stroke=3D'%23000' stroke-width=3D'.4' stroke-linejoin=3D'roun=
+d'/%3E%3Cpath d=3D'M1.32 290.12h5.82M1.32 291.45h5.82' fill=3D'none' stroke=
+=3D'%23000' stroke-width=3D'.4'/%3E%3Cpath d=3D'M4.37 292.5v4.23M.26 292.63=
+H8.2' fill=3D'none' stroke=3D'%23000' stroke-width=3D'.3'/%3E%3Ctext font-w=
+eight=3D'700' font-size=3D'3.17' font-family=3D'sans-serif'%3E%3Ctspan x=3D=
+'1.35' y=3D'295.73'%3EF%3C/tspan%3E%3Ctspan x=3D'5.03' y=3D'295.68'%3EB%3C/=
+tspan%3E%3C/text%3E%3C/g%3E%3C/svg%3E%0A"); }
+
+button#lr-btn { background-image: url("data:image/svg+xml,%3Csvg xmlns=3D'h=
+ttp://www.w3.org/2000/svg' viewBox=3D'0 0 8.47 8.47'%3E%3Crect transform=3D=
+'translate(0 -288.53)' ry=3D'1.17' y=3D'288.8' x=3D'.27' height=3D'7.94' wi=
+dth=3D'7.94' fill=3D'%23f9f9f9'/%3E%3Cg transform=3D'translate(0 -288.53)'%=
+3E%3Crect width=3D'7.94' height=3D'7.94' x=3D'.27' y=3D'288.8' ry=3D'1.17' =
+fill=3D'none' stroke=3D'%23000' stroke-width=3D'.4' stroke-linejoin=3D'roun=
+d'/%3E%3Cpath d=3D'M1.06 290.12H3.7m-2.64 1.33H3.7m-2.64 1.32H3.7m-2.64 1.3=
+H3.7m-2.64 1.33H3.7' fill=3D'none' stroke=3D'%23000' stroke-width=3D'.4'/%3=
+E%3Cpath d=3D'M4.37 288.8v7.94m0-4.11h3.96' fill=3D'none' stroke=3D'%23000'=
+ stroke-width=3D'.3'/%3E%3Ctext font-weight=3D'700' font-size=3D'3.17' font=
+-family=3D'sans-serif'%3E%3Ctspan x=3D'5.11' y=3D'291.96'%3EF%3C/tspan%3E%3=
+Ctspan x=3D'5.03' y=3D'295.68'%3EB%3C/tspan%3E%3C/text%3E%3C/g%3E%3C/svg%3E=
+%0A"); }
+
+button#bom-btn { background-image: url("data:image/svg+xml,%3Csvg xmlns=3D'=
+http://www.w3.org/2000/svg' viewBox=3D'0 0 8.47 8.47'%3E%3Crect transform=
+=3D'translate(0 -288.53)' ry=3D'1.17' y=3D'288.8' x=3D'.27' height=3D'7.94'=
+ width=3D'7.94' fill=3D'%23f9f9f9'/%3E%3Cg transform=3D'translate(0 -288.53=
+)' fill=3D'none' stroke=3D'%23000' stroke-width=3D'.4'%3E%3Crect width=3D'7=
+.94' height=3D'7.94' x=3D'.27' y=3D'288.8' ry=3D'1.17' stroke-linejoin=3D'r=
+ound'/%3E%3Cpath d=3D'M1.59 290.12h5.29M1.59 291.45h5.33M1.59 292.75h5.33M1=
+.59 294.09h5.33M1.59 295.41h5.33'/%3E%3C/g%3E%3C/svg%3E"); }
+
+button#bom-grouped-btn { background-image: url("data:image/svg+xml,%3Csvg x=
+mlns=3D'http://www.w3.org/2000/svg' width=3D'32' height=3D'32'%3E%3Cg strok=
+e=3D'%23000' stroke-linejoin=3D'round' class=3D'layer'%3E%3Crect width=3D'2=
+9' height=3D'29' x=3D'1.5' y=3D'1.5' stroke-width=3D'2' fill=3D'%23fff' rx=
+=3D'5' ry=3D'5'/%3E%3Cpath stroke-linecap=3D'square' stroke-width=3D'2' d=
+=3D'M6 10h4m4 0h5m4 0h3M6.1 22h3m3.9 0h5m4 0h4m-16-8h4m4 0h4'/%3E%3Cpath st=
+roke-linecap=3D'null' d=3D'M5 17.5h22M5 26.6h22M5 5.5h22'/%3E%3C/g%3E%3C/sv=
+g%3E"); }
+
+button#bom-ungrouped-btn { background-image: url("data:image/svg+xml,%3Csvg=
+ xmlns=3D'http://www.w3.org/2000/svg' width=3D'32' height=3D'32'%3E%3Cg str=
+oke=3D'%23000' stroke-linejoin=3D'round' class=3D'layer'%3E%3Crect width=3D=
+'29' height=3D'29' x=3D'1.5' y=3D'1.5' stroke-width=3D'2' fill=3D'%23fff' r=
+x=3D'5' ry=3D'5'/%3E%3Cpath stroke-linecap=3D'square' stroke-width=3D'2' d=
+=3D'M6 10h4m-4 8h3m-3 8h4'/%3E%3Cpath stroke-linecap=3D'null' d=3D'M5 13.5h=
+22m-22 8h22M5 5.5h22'/%3E%3C/g%3E%3C/svg%3E"); }
+
+button#bom-netlist-btn { background-image: url("data:image/svg+xml,%3Csvg x=
+mlns=3D'http://www.w3.org/2000/svg' width=3D'32' height=3D'32'%3E%3Cg fill=
+=3D'none' stroke=3D'%23000' class=3D'layer'%3E%3Crect width=3D'29' height=
+=3D'29' x=3D'1.5' y=3D'1.5' stroke-width=3D'2' fill=3D'%23fff' rx=3D'5' ry=
+=3D'5'/%3E%3Cpath stroke-width=3D'2' d=3D'M6 26l6-6v-8m13.8-6.3l-6 6v8'/%3E=
+%3Ccircle cx=3D'11.8' cy=3D'9.5' r=3D'2.8' stroke-width=3D'2'/%3E%3Ccircle =
+cx=3D'19.8' cy=3D'22.8' r=3D'2.8' stroke-width=3D'2'/%3E%3C/g%3E%3C/svg%3E"=
+); }
+
+button#copy { background-image: url("data:image/svg+xml,%3Csvg height=3D'48=
+' viewBox=3D'0 0 48 48' width=3D'48' xmlns=3D'http://www.w3.org/2000/svg'%3=
+E%3Cpath d=3D'M0 0h48v48h-48z' fill=3D'none'/%3E%3Cpath d=3D'M32 2h-24c-2.2=
+1 0-4 1.79-4 4v28h4v-28h24v-4zm6 8h-22c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 =
+4 4h22c2.21 0 4-1.79 4-4v-28c0-2.21-1.79-4-4-4zm0 32h-22v-28h22v28z'/%3E%3C=
+/svg%3E"); background-position: 6px 6px; background-repeat: no-repeat; back=
+ground-size: 26px 26px; border-radius: 6px; height: 40px; width: 40px; marg=
+in: 10px 5px; }
+
+button#copy:active { box-shadow: rgb(108, 108, 108) 0px 0px 5px inset; }
+
+textarea.clipboard-temp { position: fixed; top: 0px; left: 0px; width: 2em;=
+ height: 2em; padding: 0px; border: none; outline: none; box-shadow: none; =
+background: transparent; }
+
+.left-most-button { border-right: 0px; border-top-left-radius: 6px; border-=
+bottom-left-radius: 6px; }
+
+.middle-button { border-right: 0px; }
+
+.right-most-button { border-top-right-radius: 6px; border-bottom-right-radi=
+us: 6px; }
+
+.button-container { font-size: 0px; margin: 10px 10px 10px 0px; }
+
+.dark .button-container { filter: invert(1); }
+
+.button-container button { background-size: 32px 32px; background-position:=
+ 5px 5px; background-repeat: no-repeat; }
+
+@media print {
+  .hideonprint { display: none; }
+}
+
+canvas { cursor: crosshair; }
+
+canvas:active { cursor: grabbing; }
+
+.fileinfo { width: 100%; max-width: 1000px; border: none; padding: 5px; }
+
+.fileinfo .title { font-size: 20pt; font-weight: bold; }
+
+.fileinfo td { overflow: hidden; white-space: nowrap; max-width: 1px; width=
+: 50%; text-overflow: ellipsis; }
+
+.bom { border-collapse: collapse; font-family: Consolas, "DejaVu Sans Mono"=
+, Monaco, monospace; font-size: 10pt; table-layout: fixed; width: 100%; mar=
+gin-top: 1px; position: relative; }
+
+.bom th, .bom td { border: 1px solid black; padding: 5px; overflow-wrap: br=
+eak-word; text-align: center; position: relative; }
+
+.dark .bom th, .dark .bom td { border: 1px solid rgb(119, 119, 119); }
+
+.bom th { background-color: rgb(204, 204, 204); background-clip: padding-bo=
+x; }
+
+.dark .bom th { background-color: rgb(59, 71, 73); }
+
+.bom tr.highlighted:nth-child(n) { background-color: rgb(204, 255, 204); }
+
+.dark .bom tr.highlighted:nth-child(n) { background-color: rgb(34, 96, 34);=
+ }
+
+.bom tr:nth-child(2n) { background-color: rgb(242, 242, 242); }
+
+.dark .bom tr:nth-child(2n) { background-color: rgb(49, 59, 64); }
+
+.bom tr.checked { color: rgb(28, 181, 61); }
+
+.dark .bom tr.checked { color: rgb(44, 206, 84); }
+
+.bom tr { transition: background-color 0.2s ease 0s; }
+
+.bom .numCol { width: 30px; }
+
+.bom .value { width: 15%; }
+
+.bom .quantity { width: 65px; }
+
+.bom th .sortmark { position: absolute; right: 1px; top: 1px; margin-top: -=
+5px; border-width: 5px; border-style: solid; border-color: transparent tran=
+sparent rgb(34, 34, 17); transform-origin: 50% 85%; transition: opacity 0.2=
+s ease 0s, transform 0.4s ease 0s; }
+
+.dark .bom th .sortmark { filter: invert(1); }
+
+.bom th .sortmark.none { opacity: 0; }
+
+.bom th .sortmark.desc { transform: rotate(180deg); }
+
+.bom th:hover .sortmark.none { opacity: 0.5; }
+
+.bom .bom-checkbox { width: 30px; position: relative; user-select: none; }
+
+.bom .bom-checkbox::before { content: ""; position: absolute; border-width:=
+ 15px; border-style: solid; border-color: rgb(81, 130, 159) transparent tra=
+nsparent; visibility: hidden; top: -15px; }
+
+.bom .bom-checkbox::after { content: "Double click to set/unset all"; posit=
+ion: absolute; color: white; top: -35px; left: -26px; background: rgb(81, 1=
+30, 159); padding: 5px 15px; border-radius: 8px; white-space: nowrap; visib=
+ility: hidden; }
+
+.bom .bom-checkbox:hover::before, .bom .bom-checkbox:hover::after { visibil=
+ity: visible; transition: visibility 0.2s linear 1s; }
+
+.split { box-sizing: border-box; overflow: hidden auto; background-color: i=
+nherit; }
+
+.split.split-horizontal, .gutter.gutter-horizontal { height: 100%; float: l=
+eft; }
+
+.gutter { background-color: rgb(221, 221, 221); background-repeat: no-repea=
+t; background-position: 50% center; transition: background-color 0.3s ease =
+0s; }
+
+.dark .gutter { background-color: rgb(119, 119, 119); }
+
+.gutter.gutter-horizontal { background-image: url("data:image/png;base64,iV=
+BORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrI=
+IiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg=3D=3D"); cursor: ew-resize; w=
+idth: 5px; }
+
+.gutter.gutter-vertical { background-image: url("data:image/png;base64,iVBO=
+Rw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlM=
+AQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=3D"); cursor: =
+ns-resize; height: 5px; }
+
+.searchbox { float: left; height: 40px; margin: 10px 5px; padding: 12px 32p=
+x; font-family: Consolas, "DejaVu Sans Mono", Monaco, monospace; font-size:=
+ 18px; box-sizing: border-box; border: 1px solid rgb(136, 136, 136); border=
+-radius: 6px; outline: none; background-color: rgb(238, 238, 238); transiti=
+on: background-color 0.2s ease 0s, border 0.2s ease 0s; background-image: u=
+rl("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABN=
+klEQVQ4T8XSMUvDQBQH8P/LElFa/AIZHcTBQSz0I/gFstTBRR2KUC4ldDxw7h0Bl3RRUATxi4ii=
+ODgoiLNrbQYp5J6cpJJqomkX33Z37/14d/dIa33MzDuYI4johOI4XhyNRteO46zNYjDzAxE1yBZ=
+prVeZ+QbAUhXEGJMA2Ox2u4+fQIa0mPmsCgCgJYQ4t7lfgF0opQYAdv9ABkKI/UnOFCClXKjX61=
+cA1osQY8x9kiRNKeV7IWA3oyhaSdP0FkAtjxhj3hzH2RBCPOf3pzqYHCilfAAX+URm9oMguPzeW=
+SGQvUcMYC8rOBJCHBRdqxTo9/vbRHRqi8bj8XKv1xvODbiuW2u32/bvf0SlDv4XYOY7z/Mavu+n=
+M1+BmQ+NMc0wDF/LprP0DbTWW0T00ul0nn4b7Q87+X4Qmfiq2wAAAABJRU5ErkJggg=3D=3D");=
+ background-position: 10px 10px; background-repeat: no-repeat; }
+
+.dark .searchbox { background-color: rgb(17, 17, 17); color: rgb(238, 238, =
+238); }
+
+.searchbox::placeholder { color: rgb(204, 204, 204); }
+
+.dark .searchbox::placeholder { color: rgb(102, 102, 102); }
+
+.filter { width: calc(60% - 64px); }
+
+.reflookup { width: calc(40% - 10px); }
+
+input[type=3D"text"]:focus { background-color: white; border: 1px solid rgb=
+(51, 51, 51); }
+
+.dark input[type=3D"text"]:focus { background-color: rgb(51, 51, 51); borde=
+r: 1px solid rgb(204, 204, 204); }
+
+mark.highlight { background-color: rgb(80, 80, 255); color: rgb(255, 255, 2=
+55); padding: 2px; border-radius: 6px; }
+
+.dark mark.highlight { background-color: rgb(118, 166, 218); color: rgb(17,=
+ 17, 17); }
+
+.menubtn { background-color: white; border: none; background-image: url("da=
+ta:image/svg+xml,%3Csvg xmlns=3D'http://www.w3.org/2000/svg' width=3D'36' h=
+eight=3D'36' viewBox=3D'0 0 20 20'%3E%3Cpath fill=3D'none' d=3D'M0 0h20v20H=
+0V0z'/%3E%3Cpath d=3D'M15.95 10.78c.03-.25.05-.51.05-.78s-.02-.53-.06-.78l1=
+.69-1.32c.15-.12.19-.34.1-.51l-1.6-2.77c-.1-.18-.31-.24-.49-.18l-1.99.8c-.4=
+2-.32-.86-.58-1.35-.78L12 2.34c-.03-.2-.2-.34-.4-.34H8.4c-.2 0-.36.14-.39.3=
+4l-.3 2.12c-.49.2-.94.47-1.35.78l-1.99-.8c-.18-.07-.39 0-.49.18l-1.6 2.77c-=
+.1.18-.06.39.1.51l1.69 1.32c-.04.25-.07.52-.07.78s.02.53.06.78L2.37 12.1c-.=
+15.12-.19.34-.1.51l1.6 2.77c.1.18.31.24.49.18l1.99-.8c.42.32.86.58 1.35.78l=
+.3 2.12c.04.2.2.34.4.34h3.2c.2 0 .37-.14.39-.34l.3-2.12c.49-.2.94-.47 1.35-=
+.78l1.99.8c.18.07.39 0 .49-.18l1.6-2.77c.1-.18.06-.39-.1-.51l-1.67-1.32zM10=
+ 13c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z'/%3E%3C/svg%3E%0A"=
+); background-position: center center; background-repeat: no-repeat; }
+
+.statsbtn { background-color: white; border: none; background-image: url("d=
+ata:image/svg+xml,%3Csvg width=3D'36' height=3D'36' xmlns=3D'http://www.w3.=
+org/2000/svg'%3E%3Cpath d=3D'M4 6h28v24H4V6zm0 8h28v8H4m9-16v24h10V5.8' fil=
+l=3D'none' stroke=3D'%23000' stroke-width=3D'2'/%3E%3C/svg%3E"); background=
+-position: center center; background-repeat: no-repeat; }
+
+.iobtn { background-color: white; border: none; background-image: url("data=
+:image/svg+xml,%3Csvg xmlns=3D'http://www.w3.org/2000/svg' width=3D'36' hei=
+ght=3D'36'%3E%3Cpath fill=3D'none' stroke=3D'%23000' stroke-width=3D'2' d=
+=3D'M3 33v-7l6.8-7h16.5l6.7 7v7H3zM3.2 26H33M21 9l5-5.9 5 6h-2.5V15h-5V9H21=
+zm-4.9 0l-5 6-5-6h2.5V3h5v6h2.5z'/%3E%3Cpath fill=3D'none' stroke=3D'%23000=
+' d=3D'M6.1 29.5H10'/%3E%3C/svg%3E"); background-position: center center; b=
+ackground-repeat: no-repeat; }
+
+.visbtn { background-image: url("data:image/svg+xml,%3Csvg xmlns=3D'http://=
+www.w3.org/2000/svg' width=3D'24' height=3D'24'%3E%3Cpath fill=3D'none' str=
+oke=3D'%23333' d=3D'M2.5 4.5h5v15h-5zM9.5 4.5h5v15h-5zM16.5 4.5h5v15h-5z'/%=
+3E%3C/svg%3E"); background-position: center center; background-repeat: no-r=
+epeat; padding: 15px; }
+
+#vismenu-content { left: 0px; font-family: Verdana, sans-serif; }
+
+.dark .statsbtn, .dark .savebtn, .dark .menubtn, .dark .iobtn, .dark .visbt=
+n { filter: invert(1); }
+
+.flexbox { display: flex; align-items: center; justify-content: space-betwe=
+en; width: 100%; }
+
+.savebtn { background-color: rgb(214, 214, 214); width: auto; height: 30px;=
+ flex-grow: 1; margin: 5px; border-radius: 4px; }
+
+.savebtn:active { background-color: rgb(0, 170, 0); color: white; }
+
+.dark .savebtn:active { background-color: rgb(187, 51, 187); }
+
+.stats { border-collapse: collapse; font-size: 12pt; table-layout: fixed; w=
+idth: 100%; min-width: 450px; }
+
+.dark .stats td { border: 1px solid rgb(187, 187, 187); }
+
+.stats td { border: 1px solid black; padding: 5px; overflow-wrap: break-wor=
+d; text-align: center; position: relative; }
+
+#checkbox-stats div { position: absolute; left: 0px; top: 0px; height: 100%=
+; width: 100%; display: flex; align-items: center; justify-content: center;=
+ }
+
+#checkbox-stats .bar { background-color: rgba(28, 251, 0, 0.6); }
+
+.menu { position: relative; display: inline-block; margin: 10px 10px 10px 0=
+px; }
+
+.menu-content { display: none; position: absolute; background-color: white;=
+ right: 0px; min-width: 300px; box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px =
+0px; z-index: 100; padding: 8px; font-size: 12pt !important; text-align: le=
+ft !important; font-weight: normal !important; }
+
+.dark .menu-content { background-color: rgb(17, 17, 17); }
+
+.menu:hover .menu-content { display: block; }
+
+.menu:hover .menubtn, .menu:hover .iobtn, .menu:hover .statsbtn { backgroun=
+d-color: rgb(238, 238, 238); }
+
+.menu-label { display: inline-block; padding: 8px; border-width: 0px 1px 1p=
+x; border-right-style: solid; border-bottom-style: solid; border-left-style=
+: solid; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(2=
+04, 204, 204); border-left-color: rgb(204, 204, 204); border-image: initial=
+; border-top-style: initial; border-top-color: initial; width: calc(100% - =
+18px); }
+
+.menu-label-top { border-top: 1px solid rgb(204, 204, 204); }
+
+.menu-textbox { float: left; height: 24px; margin: 10px 5px; padding: 5px; =
+font-family: Consolas, "DejaVu Sans Mono", Monaco, monospace; font-size: 14=
+px; box-sizing: border-box; border: 1px solid rgb(136, 136, 136); border-ra=
+dius: 4px; outline: none; background-color: rgb(238, 238, 238); transition:=
+ background-color 0.2s ease 0s, border 0.2s ease 0s; width: calc(100% - 10p=
+x); }
+
+.menu-textbox.invalid, .dark .menu-textbox.invalid { color: red; }
+
+.dark .menu-textbox { background-color: rgb(34, 34, 34); color: rgb(238, 23=
+8, 238); }
+
+.radio-container { margin: 4px; }
+
+.topmostdiv { width: 100%; height: 100%; background-color: white; transitio=
+n: background-color 0.3s ease 0s; }
+
+#top { height: 78px; border-bottom: 2px solid black; }
+
+.dark #top { border-bottom: 2px solid rgb(204, 204, 204); }
+
+#dbg { display: block; }
+
+::-webkit-scrollbar { width: 8px; }
+
+::-webkit-scrollbar-track { background: rgb(170, 170, 170); }
+
+::-webkit-scrollbar-thumb { background: rgb(102, 102, 102); border-radius: =
+3px; }
+
+::-webkit-scrollbar-thumb:hover { background: rgb(85, 85, 85); }
+
+.slider { appearance: none; width: 100%; margin: 3px 0px; padding: 0px; out=
+line: none; opacity: 0.7; transition: opacity 0.2s ease 0s; border-radius: =
+3px; }
+
+.slider:hover { opacity: 1; }
+
+.slider:focus { outline: none; }
+
+.slider::-webkit-slider-runnable-track { appearance: none; width: 100%; hei=
+ght: 8px; background: rgb(211, 211, 211); border-radius: 3px; border: none;=
+ }
+
+.slider::-webkit-slider-thumb { appearance: none; width: 15px; height: 15px=
+; border-radius: 50%; background: rgb(0, 170, 0); cursor: pointer; margin-t=
+op: -4px; }
+
+.dark .slider::-webkit-slider-thumb { background: rgb(51, 221, 51); }
+
+.shameless-plug { font-size: 0.8em; text-align: center; display: block; }
+
+a { color: rgb(2, 120, 164); }
+
+.dark a { color: rgb(0, 185, 253); }
+
+#frontcanvas, #backcanvas { touch-action: none; }
+
+.placeholder { border: 1px dashed rgb(159, 159, 218) !important; background=
+-color: rgb(237, 242, 247) !important; }
+
+.dragging { z-index: 999; }
+
+.dark .dragging > table > tbody > tr { background-color: rgb(37, 44, 48); }
+
+.dark .placeholder { filter: invert(1); }
+
+.column-spacer { top: 0px; left: 0px; width: calc(100% - 4px); position: ab=
+solute; cursor: pointer; user-select: none; height: 100%; }
+
+.column-width-handle { top: 0px; right: 0px; width: 4px; position: absolute=
+; cursor: col-resize; user-select: none; height: 100%; }
+
+.column-width-handle:hover { background-color: rgb(79, 153, 189); }
+
+.help-link { border: 1px solid rgb(2, 120, 164); padding-inline: 0.3rem; bo=
+rder-radius: 3px; cursor: pointer; }
+
+.dark .help-link { border: 1px solid rgb(0, 185, 253); }
+------MultipartBoundary--AXAIX3oRG8cadMaM4KG09wcbXujCboKClcOBsa7FTo----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-70efa64a-1fa0-41d2-94e2-ba3f8cabc8f6@mhtml.blink
+
+@charset "utf-8";
+
+[touch-action=3D"none"] { touch-action: none; }
+
+[touch-action=3D"auto"] { touch-action: auto; }
+
+[touch-action=3D"pan-x"] { touch-action: pan-x; }
+
+[touch-action=3D"pan-y"] { touch-action: pan-y; }
+
+[touch-action=3D"pan-x pan-y"], [touch-action=3D"pan-y pan-x"] { touch-acti=
+on: pan-x pan-y; }
+------MultipartBoundary--AXAIX3oRG8cadMaM4KG09wcbXujCboKClcOBsa7FTo------
