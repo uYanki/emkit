@@ -63,8 +63,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/User}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Debug}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:/emkit/platform/CH32V30x_Lib/Core&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:/emkit/platform/CH32V30x_Lib/Peripheral/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/emkit/libc/wch/CH32V30x_Lib/Core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:/emkit/libc/wch/CH32V30x_Lib/Peripheral/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${PROJECT_LOC}/../common/FlashDB/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${PROJECT_LOC}/../common/FlashDB/port/fal/inc&quot;"/>
 								</option>
